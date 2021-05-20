@@ -4,8 +4,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Takuto Okamoto | Web Developer</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Initial Commit</h1>
+  <!-- mobile nav -->
+  <nav class="hide-on-large-only">
+    <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
+      <i class="material-icons">menu</i>
+    </a>
+  </nav>
+
+  <!-- desktop nav -->
+  <ul id="slide-out" class="sidenav sidenav-fixed">
+    <li><a href="#!">First Sidebar Link</a></li>
+    <li><a href="#!">Second Sidebar Link</a></li>
+  </ul>
+
+  <main>
+    <p>Hello World</p>
+  </main>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {});
+    });
+  </script>
 </body>
 </html>
