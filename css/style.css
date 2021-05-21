@@ -36,6 +36,25 @@ main {
   height: 240px;
 }
 
+/* Skills Section */
+#skills {
+  background-color: lightgray;
+  padding-bottom: 20px;
+}
+
+.skill-img {
+  text-align: center;
+}
+
+.skill-img img {
+  display: block;
+  margin: 0 auto;
+}
+
+.skill-img p {
+  margin: 0;
+}
+
 /* Media Query */
 
 @media only screen and (max-width : 992px) {
