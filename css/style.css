@@ -2,10 +2,19 @@ main {
   padding-left: 300px;
 }
 
+.row {
+  margin-bottom: 0;
+}
+
+/* Top Section */
+
 #top {
-  position: relative;
   height: 100vh;
   background-color: lightgray;
+}
+
+#top .container {
+  position: relative;
 }
 
 #top .greeting {
@@ -13,6 +22,21 @@ main {
   top: 0;
   left: 0;
 }
+
+/* About Section */
+
+#about {
+  background-color: lightblue;
+  padding-bottom: 20px;
+}
+
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+  height: 240px;
+}
+
+/* Media Query */
 
 @media only screen and (max-width : 992px) {
   main {
