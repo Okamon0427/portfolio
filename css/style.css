@@ -7,7 +7,6 @@ main {
 }
 
 /* Top Section */
-
 #top {
   height: 100vh;
   background-color: lightgray;
@@ -24,7 +23,6 @@ main {
 }
 
 /* About Section */
-
 #about {
   background-color: lightblue;
   padding-bottom: 20px;
@@ -36,9 +34,15 @@ main {
   height: 240px;
 }
 
+/* Projects Section */
+#projects {
+  background-color: lightgray;
+  padding-bottom: 20px;
+}
+
 /* Skills Section */
 #skills {
-  background-color: lightgray;
+  background-color: lightblue;
   padding-bottom: 20px;
 }
 
@@ -56,9 +60,8 @@ main {
 }
 
 /* Contact Section */
-
 #contact {
-  background-color: lightblue;
+  background-color: lightgray;
   padding-bottom: 20px;
 }
 
@@ -73,7 +76,6 @@ main {
 }
 
 /* Media Query */
-
 @media only screen and (max-width : 992px) {
   main {
     padding-left: 0;
