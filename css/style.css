@@ -55,6 +55,17 @@ main {
   margin: 0;
 }
 
+/* Contact Section */
+
+#contact {
+  background-color: lightblue;
+  padding-bottom: 20px;
+}
+
+.contact-info {
+  text-align: center;
+}
+
 /* Media Query */
 
 @media only screen and (max-width : 992px) {
