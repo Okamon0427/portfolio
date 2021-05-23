@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
   <!-- mobile nav -->
   <nav class="hide-on-large-only">
     <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
@@ -23,6 +24,7 @@
 
   <!-- desktop nav -->
   <ul id="slide-out" class="sidenav sidenav-fixed">
+    <li><a class="waves-effect" href="#home">Home</a></li>
     <li><a class="waves-effect" href="#about">About</a></li>
     <li><a class="waves-effect" href="#projects">Projects</a></li>
     <li><a class="waves-effect" href="#skills">Skills</a></li>
@@ -32,7 +34,7 @@
   <main>
     
     <!-- Top Section -->
-    <section id="top">
+    <section id="home" class="scrollspy">
       <div class="container">
         <div class="greeting">
           <h2>Hi, I'm Takuto!<br>Web Developer based in Toronto</h2>
@@ -41,7 +43,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="scrollspy">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -60,7 +62,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="scrollspy">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -76,7 +78,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="scrollspy">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -153,7 +155,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="scrollspy">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -254,9 +256,13 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
+    
+    // Scrolll Spy
     document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.sidenav');
-      var instances = M.Sidenav.init(elems, {});
+      var sidenav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sidenav, {});
+      var scrollspy = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(scrollspy, { scrollOffset: 0 });
     });
   </script>
 </body>
