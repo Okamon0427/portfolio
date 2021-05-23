@@ -69,6 +69,17 @@ main {
   text-align: center;
 }
 
+.contact-info .button {
+  display: inline-block;
+  text-align: right;
+}
+
+.contact-info .content {
+  display: block;
+  text-align: left;
+  line-height: 56px;
+}
+
 /* Footer */
 .page-footer {
   padding: 0;
@@ -79,5 +90,16 @@ main {
 @media only screen and (max-width : 992px) {
   main {
     padding-left: 0;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .contact-info .button {
+    text-align: center;
+  }
+
+  .contact-info .content {
+    text-align: center;
+    line-height: 42px;
   }
 }
