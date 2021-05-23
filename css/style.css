@@ -72,6 +72,10 @@ main {
   padding-bottom: 20px;
 }
 
+.contact-text {
+  text-align: center;
+}
+
 .contact-info {
   text-align: center;
 }
@@ -85,6 +89,14 @@ main {
   display: block;
   text-align: left;
   line-height: 56px;
+}
+
+#contact textarea {
+  height: 6rem;
+}
+
+#contact .submit-button {
+  text-align: center;
 }
 
 /* Footer */
