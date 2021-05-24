@@ -3,12 +3,21 @@ main {
   padding-left: 200px;
 }
 
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 85%;
+}
+
 .row {
   margin-bottom: 0;
 }
 
 /* Navbar */
-.active {
+#slide-out .active {
   background-color: lightblue;
 }
 
@@ -52,6 +61,46 @@ main {
   padding-bottom: 20px;
 }
 
+.language-images {
+  margin: 10px 0;
+}
+
+.language-images span {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.language-image {
+  width: 25px;
+  height: 25px;
+  margin: 0 2.5px;
+}
+
+.project {
+  margin-top: 50px;
+}
+
+.project-image {
+  margin-top: 20px;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.project-link {
+  border-bottom: 1.5px solid #fff;
+  transition: 0.5s;
+  padding: 0 8px;
+}
+
+.project-link:hover {
+  border-bottom: 1.5px solid rgba(0,0,0,0.87);
+}
+
 /* Skills Section */
 #skills {
   background-color: lightblue;
@@ -70,8 +119,13 @@ main {
 .skill-img img {
   display: block;
   margin: 0 auto;
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
+  transition: 0.3s;
+}
+
+.skill-img img:hover {
+  transform: scale(1.2, 1.2);
 }
 
 .skill-img p {
@@ -118,6 +172,12 @@ main {
 }
 
 /* Media Query */
+@media only screen and (max-width : 1200px) {
+  .card .card-content {
+    padding: 12px;
+  }
+}
+
 @media only screen and (max-width : 992px) {
   main {
     padding-left: 0;
@@ -125,6 +185,14 @@ main {
 }
 
 @media only screen and (max-width : 600px) {
+  .container {
+    width: 95%;
+  }
+
+  .project-image img {
+    max-width: none;
+  }
+
   .contact-info .button {
     text-align: center;
   }
