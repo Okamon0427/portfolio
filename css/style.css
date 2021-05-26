@@ -25,6 +25,10 @@ main {
   background-color: lightblue;
 }
 
+#slide-out i {
+  margin-right: 16;
+}
+
 .sidenav {
   width: 200px;
   padding-top: 100px;
@@ -101,6 +105,21 @@ main {
 
 .project-link:hover {
   border-bottom: 1.5px solid rgba(0,0,0,0.87);
+}
+
+.company-title {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.company-title a {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  transition: 0.5s;
+}
+
+.company-title a:hover {
+  text-decoration-color: #039be5;
 }
 
 /* Skills Section */
@@ -191,7 +210,11 @@ main {
     width: 95%;
   }
 
-  .project-image img {
+  .project {
+    display: block;
+  }
+
+  .project-image {
     max-width: none;
   }
 
