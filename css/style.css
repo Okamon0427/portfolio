@@ -1,4 +1,8 @@
 /* Overall */
+body {
+  background-color: #fff;
+}
+
 main {
   padding-left: 200px;
 }
@@ -22,7 +26,11 @@ main {
 
 /* Navbar */
 #slide-out .active {
-  background-color: lightblue;
+  color: #4caf50;
+}
+
+.active .material-icons {
+  color: #4caf50!important;
 }
 
 #slide-out i {
@@ -32,13 +40,11 @@ main {
 .sidenav {
   width: 200px;
   padding-top: 100px;
-  background-color: lightgreen;
 }
 
 /* Home Section */
 #home {
   height: 100vh;
-  background-color: lightgray;
 }
 
 #home .container {
@@ -53,19 +59,29 @@ main {
 
 /* About Section */
 #about {
-  background-color: lightblue;
   padding-bottom: 20px;
+}
+
+.about-wrapper {
+  margin-top: 20px;
 }
 
 .profile-pic {
   display: block;
   margin: 0 auto;
-  height: 240px;
+  height: 250px;
+}
+
+.about-text {
+  margin: 0;
+}
+
+.about-contact {
+  margin-top: 10px;
 }
 
 /* Projects Section */
 #projects {
-  background-color: lightgray;
   padding-bottom: 20px;
 }
 
@@ -90,6 +106,10 @@ main {
   margin: 25px 0;
   display: flex;
   align-items: center;
+}
+
+.project-image-wrapper {
+  text-align: center;  
 }
 
 .project-image {
@@ -124,7 +144,6 @@ main {
 
 /* Skills Section */
 #skills {
-  background-color: lightblue;
   padding-bottom: 20px;
 }
 
@@ -155,27 +174,12 @@ main {
 
 /* Contact Section */
 #contact {
-  background-color: lightgray;
   padding-bottom: 20px;
 }
 
 .contact-text {
   text-align: center;
-}
-
-.contact-info {
-  text-align: center;
-}
-
-.contact-info .button {
-  display: inline-block;
-  text-align: right;
-}
-
-.contact-info .content {
-  display: block;
-  text-align: left;
-  line-height: 56px;
+  margin-bottom: 0;
 }
 
 #contact textarea {
@@ -184,6 +188,11 @@ main {
 
 #contact .submit-button {
   text-align: center;
+}
+
+#contact form {
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 /* Footer */
@@ -210,20 +219,15 @@ main {
     width: 95%;
   }
 
+  .about-text {
+    margin: 14px 0;
+  }
+
   .project {
     display: block;
   }
 
   .project-image {
     max-width: none;
-  }
-
-  .contact-info .button {
-    text-align: center;
-  }
-
-  .contact-info .content {
-    text-align: center;
-    line-height: 42px;
   }
 }
