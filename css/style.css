@@ -219,12 +219,20 @@ main {
     width: 95%;
   }
 
+  #home .container {
+    width: 85%;
+  }
+
   .about-text {
     margin: 14px 0;
   }
 
   .project {
-    display: block;
+    flex-direction: column;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
   }
 
   .project-image {
