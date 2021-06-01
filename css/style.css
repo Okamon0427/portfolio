@@ -83,6 +83,10 @@ main {
   left: 0;
 }
 
+#typed {
+  color: #4caf50;
+}
+
 /* About Section */
 #about {
   padding-bottom: 20px;
