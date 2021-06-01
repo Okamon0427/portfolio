@@ -10,6 +10,7 @@ AOS.init({
 // Typed.js
 var options = {
   strings: ['a Web Developer', 'using a MERN stack', 'a sushi lover'],
+  startDelay: 1000,
   typeSpeed: 60,
   backSpeed: 40,
   backDelay: 2000,

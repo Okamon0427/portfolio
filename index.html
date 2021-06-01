@@ -26,21 +26,31 @@
 
   <!-- desktop nav -->
   <ul id="slide-out" class="sidenav sidenav-fixed grey lighten-5">
-    <li><a class="waves-effect" href="#home">
-      <i class="material-icons">home</i>Home
-    </a></li>
-    <li><a class="waves-effect" href="#about">
-      <i class="material-icons">person</i>About
-    </a></li>
-    <li><a class="waves-effect" href="#projects">
-      <i class="material-icons">desktop_mac</i>Projects
-    </a></li>
-    <li><a class="waves-effect" href="#skills">
-      <i class="material-icons">code</i>Skills
-    </a></li>
-    <li><a class="waves-effect" href="#contact">
-      <i class="material-icons">contact_mail</i>Contact
-    </a></li>
+    <li data-aos="fade-right" data-aos-duration="750">
+      <a class="waves-effect" href="#home">
+        <i class="material-icons">home</i>Home
+      </a>
+    </li>
+    <li data-aos="fade-right" data-aos-duration="750" data-aos-delay="50">
+      <a class="waves-effect" href="#about">
+        <i class="material-icons">person</i>About
+      </a>
+    </li>
+    <li data-aos="fade-right" data-aos-duration="750" data-aos-delay="100">
+      <a class="waves-effect" href="#projects">
+        <i class="material-icons">desktop_mac</i>Projects
+      </a>
+    </li>
+    <li data-aos="fade-right" data-aos-duration="750" data-aos-delay="150">
+      <a class="waves-effect" href="#skills">
+        <i class="material-icons">code</i>Skills
+      </a>
+    </li>
+    <li data-aos="fade-right" data-aos-duration="750" data-aos-delay="200">
+      <a class="waves-effect" href="#contact">
+        <i class="material-icons">contact_mail</i>Contact
+      </a>
+    </li>
   </ul>
 
   <div class="wrapper">
@@ -48,11 +58,9 @@
       <!-- Top Section -->
       <section id="home" class="scrollspy">
         <div class="container">
-          <div class="greeting">
-            <h2>Hi, I'm Takuto!👋
-              <br>
-              I am <span id="typed"></span>
-            </h2>
+          <div class="greeting-wrapper">
+            <h2 class="greeting-name">Hi, I'm Takuto!👋</h2>
+            <h4 class="greeting-dynamic">I am <span id="typed"></span></h3>
           </div>
         </div>
       </section>
@@ -98,7 +106,7 @@
           <!-- Project 1 -->
           <div class="row project reverse">
             <div class="col s12 m7">
-              <div class="card" data-aos="fade-right">
+              <div class="card" data-aos="fade-right" data-aos-delay="300">
                 <div class="card-content">
                   <span class="card-title green-text">Todo App</span>
                   <p>
@@ -125,17 +133,17 @@
                 </div>
               </div>
             </div>
-            <div class="project-image-wrapper col s12 m5" data-aos="fade-left" data-aos-delay="200">
+            <div class="project-image-wrapper col s12 m5" data-aos="fade-left">
               <img class="project-image" src="images/todo-main.JPG" alt="Todo App Picture">
             </div>
           </div>
 
           <!-- Project 2 -->
           <div class="row project">
-            <div class="project-image-wrapper col s12 m5" data-aos="fade-right" data-aos-delay="200">
+            <div class="project-image-wrapper col s12 m5" data-aos="fade-right">
               <img class="project-image" src="images/gpa-main.JPG" alt="GPA Calculator Picture">
             </div>
-            <div class="col s12 m7" data-aos="fade-left">
+            <div class="col s12 m7" data-aos="fade-left" data-aos-delay="300">
               <div class="card">
                 <div class="card-content">
                   <span class="card-title green-text">GPA Calculator</span>
@@ -165,7 +173,7 @@
           <!-- Project 3 -->
           <div class="row project reverse">
             <div class="col s12 m7">
-              <div class="card" data-aos="fade-right">
+              <div class="card" data-aos="fade-right" data-aos-delay="300">
                 <div class="card-content">
                   <span class="card-title green-text">Study Abroad!</span>
                   <p>
@@ -192,17 +200,17 @@
                 </div>
               </div>
             </div>
-            <div class="project-image-wrapper col s12 m5" data-aos="fade-left" data-aos-delay="200">
+            <div class="project-image-wrapper col s12 m5" data-aos="fade-left">
               <img class="project-image" src="images/school-main.JPG" alt="Study Abroad! Picture">
             </div>
           </div>
 
           <!-- Project 4 -->
           <div class="row project">
-            <div class="project-image-wrapper col s12 m5" data-aos="fade-right" data-aos-delay="200">
+            <div class="project-image-wrapper col s12 m5" data-aos="fade-right">
               <img class="project-image" src="images/no-image.png" alt="No Image">
             </div>
-            <div class="col s12 m7" data-aos="fade-left">
+            <div class="col s12 m7" data-aos="fade-left" data-aos-delay="300">
               <div class="card">
                 <div class="card-content">
                   <span class="card-title green-text">CRM Web Application</span>
@@ -229,7 +237,7 @@
           <!-- Project 5 -->
           <div class="row project reverse">
             <div class="col s12 m7">
-              <div class="card" data-aos="fade-right">
+              <div class="card" data-aos="fade-right" data-aos-delay="300">
                 <div class="card-content">
                   <span class="card-title green-text">Thaleia Home</span>
                   <p class="company-title">
@@ -260,7 +268,7 @@
                 </div>
               </div>
             </div>
-            <div class="project-image-wrapper col s12 m5" data-aos="fade-left" data-aos-delay="200">
+            <div class="project-image-wrapper col s12 m5" data-aos="fade-left">
               <img class="project-image" src="images/thaleia-main.JPG" alt="Study Abroad! Picture">
             </div>
           </div>
@@ -280,67 +288,67 @@
             </div>
           </div>
           <div class="row">
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="100">
               <img src="images/html5.svg" alt="HTML">
               <p class="flow-text">HTML</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="200">
               <img src="images/css3.svg" alt="CSS">
               <p class="flow-text">CSS</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="300">
               <img src="images/javascript.svg" alt="JavaScript">
               <p class="flow-text">JavaScript</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="400">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="400">
               <img src="images/typescript.svg" alt="TypeScript">
               <p class="flow-text">TypeScript</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="100">
               <img src="images/react.svg" alt="React">
               <p class="flow-text">React</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="200">
               <img src="images/redux.svg" alt="Redux">
               <p class="flow-text">Redux</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="300">
               <img src="images/nodejs.svg" alt="Node.js">
               <p class="flow-text">Node.js</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="400">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="400">
               <img src="images/expressjs.svg" alt="Express">
               <p class="flow-text">Express</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="100">
               <img src="images/mongodb.svg" alt="MongoDB">
               <p class="flow-text">MongoDB</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="200">
               <img src="images/mysql.svg" alt="MySQL">
               <p class="flow-text">MySQL</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="300">
               <img src="images/java.svg" alt="Java">
               <p class="flow-text">Java</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="400">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="400">
               <img src="images/php.svg" alt="PHP">
               <p class="flow-text">PHP</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="100">
               <img src="images/wordpress.svg" alt="WordPress">
               <p class="flow-text">WordPress</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="200">
               <img src="images/github.svg" alt="GitHub">
               <p class="flow-text">GitHub</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="300">
               <img src="images/heroku.svg" alt="Heroku">
               <p class="flow-text">Heroku</p>
             </div>
-            <div class="skill-img col s4 m3" data-aos="zoom-in" data-aos-delay="400">
+            <div class="skill-img col s3" data-aos="zoom-in" data-aos-delay="400">
               <img src="images/firebase.svg" alt="Firebase">
               <p class="flow-text">Firebase</p>
             </div>

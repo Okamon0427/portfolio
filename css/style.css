@@ -80,7 +80,7 @@ main {
   position: relative;
 }
 
-#home .greeting {
+.greeting-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -142,16 +142,16 @@ main {
 .project {
   margin: 25px 0;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .project-image-wrapper {
-  text-align: center;  
+  margin: auto;
+  text-align: center;
 }
 
 .project-image {
   width: 100%;
-  max-width: 400px;
 }
 
 .company-title {
@@ -250,12 +250,27 @@ main {
     width: 85%;
   }
 
+  .greeting-wrapper {
+    margin-top: 150px;
+  }
+
+  .greeting-name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .greeting-dynamic {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
   .about-text {
     margin: 14px 0;
   }
 
   .project {
     flex-direction: column;
+    margin: 50px 0;
   }
 
   .reverse {
@@ -264,5 +279,14 @@ main {
 
   .project-image {
     max-width: none;
+  }
+
+  .skill-img img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .skill-img p {
+    font-size: 0.8rem;
   }
 }
