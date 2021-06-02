@@ -1,9 +1,17 @@
 /* Overall */
+:root {
+  --main: #4caf50;
+  --link: #039be5
+  --white: #fff;
+  --black: rgba(0, 0, 0, 0.87);
+}
+
 html {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
+
 body {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 main {
@@ -33,7 +41,7 @@ main {
   text-decoration: none;
   margin-right: 10px;
   font-size: 16px;
-  color:rgba(0, 0, 0, 0.87);
+  color: var(--black);
 }
 
 .link::after {
@@ -43,7 +51,7 @@ main {
   content: '';
   width: 100%;
   height: 2px;
-  background: rgba(0, 0, 0, 0.87);
+  background: var(--black);
   transform: scale(0, 1);
   transform-origin: center top;
   transition: transform .3s;
@@ -54,25 +62,52 @@ main {
 }
 
 /* Navbar */
+.navbar-fixed {
+  display: none;
+}
+
 #slide-out .active {
-  color: #4caf50;
+  color: var(--main);
 }
 
 .active .material-icons {
-  color: #4caf50!important;
+  color: var(--main)!important;
 }
 
 #slide-out i {
   margin-right: 16;
+  line-height: 60px;
 }
 
 .sidenav {
   width: 200px;
-  padding-top: 100px;
+}
+
+.logo {
+  height: 150px;
+}
+
+.sidenav .logo a {
+  display: block;
+  text-align: center;
+  height: 100%;
+  line-height: 150px;
+  font-size: 2rem;
+}
+
+.sidenav .page {
+  height: 60px;
+}
+
+.sidenav .page a, .sidenav .page i {
+  height: 100%;
+  line-height: 60px;
+  align-items: center;
 }
 
 /* Home Section */
 #home {
+  position: relative;
   height: 100vh;
 }
 
@@ -84,10 +119,42 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+  margin-top: 150px;
+}
+
+.greeting-icon {
+  display: inline-block;
+  animation: icon-shaking 0.8s linear infinite;
+}
+
+@keyframes icon-shaking {
+  0% {transform: translateX(0px) rotateZ(0deg)}
+  25% {transform: translateX(3px) rotateZ(10deg)}
+  50% {transform: translateX(0px) rotateZ(0deg)}
+  75% {transform: translateX(-3px) rotateZ(-10deg)}
+  100% {transform: translateX(0px) rotateZ(0deg)}
 }
 
 #typed {
-  color: #4caf50;
+  color: var(--main);
+}
+
+.scroll-icon {
+  position: absolute;
+  display: inline-block;
+  bottom: 15%;
+  left: 50%;
+  font-size: 3.5rem;
+  color: var(--main);
+  animation: icon-scroll 0.8s linear infinite;
+}
+
+@keyframes icon-scroll {
+  0% {transform: translateY(0px)}
+  25% {transform: translateY(5px)}
+  50% {transform: translateY(0px)}
+  75% {transform: translateY(-5px)}
+  100% {transform: translateY(0px)}
 }
 
 /* About Section */
@@ -161,12 +228,12 @@ main {
 
 .company-title a {
   text-decoration: underline;
-  text-decoration-color: #fff;
+  text-decoration-color: white;
   transition: 0.5s;
 }
 
 .company-title a:hover {
-  text-decoration-color: #039be5;
+  text-decoration-color: var(--link);
 }
 
 /* Skills Section */
@@ -239,6 +306,10 @@ main {
   main {
     padding-left: 0;
   }
+
+  .navbar-fixed {
+    display: block;
+  }
 }
 
 @media only screen and (max-width : 600px) {
@@ -248,10 +319,6 @@ main {
 
   #home .container {
     width: 85%;
-  }
-
-  .greeting-wrapper {
-    margin-top: 150px;
   }
 
   .greeting-name {
