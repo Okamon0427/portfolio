@@ -9,7 +9,7 @@ AOS.init({
 
 // Typed.js
 var options = {
-  strings: ['a Web Developer', 'using a MERN stack', 'a sushi lover'],
+  strings: ['Web ^10 Developer', 'using ^10 MERN ^10 stack', 'sushi ^10 lover'],
   startDelay: 1000,
   typeSpeed: 60,
   backSpeed: 40,

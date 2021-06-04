@@ -312,6 +312,10 @@ main {
   }
 }
 
+.scroll-icon {
+  bottom: 20%;
+}
+
 @media only screen and (max-width : 600px) {
   .container {
     width: 95%;
@@ -329,6 +333,10 @@ main {
   .greeting-dynamic {
     font-size: 1.5rem;
     margin-top: 10px;
+  }
+
+  .scroll-icon {
+    bottom: 25%;
   }
 
   .about-text {
