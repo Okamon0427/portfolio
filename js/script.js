@@ -37,3 +37,20 @@ $(document).ready(function() {
     return false;
   });
 });
+
+// Bounce techs icon in project section
+$(function() {
+  var elements = $(".language-image");
+  setInterval(function() {
+    for(var i = 0; i < elements.length; i++) {
+      var random = Math.floor(Math.random() * 10);
+      if (random < 2) {
+        var element = elements[i];
+        $(element).addClass('bounce').on('animationend', function() {
+          $(this).removeClass('bounce');
+          return false;
+        });
+      }
+    }
+  }, 3000);
+});

@@ -206,6 +206,21 @@ main {
   margin: 0 2.5px;
 }
 
+.bounce {
+  animation: bounce-animation 0.5s linear 0s 1;
+}
+
+@keyframes bounce-animation {
+  0% {transform: translateY(0px)}
+  15% {transform: translateY(-10px)}
+  30% {transform: translateY(0px)}
+  45% {transform: translateY(-6px)}
+  60% {transform: translateY(0px)}
+  75% {transform: translateY(-3.6px)}
+  90% {transform: translateY(0px)}
+  100% {transform: translateY(0px)}
+}
+
 .project {
   margin: 25px 0;
   display: flex;
