@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <!-- Compiled and minified CSS -->
+  <!-- Compiled and minified CSS for Materialize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- AOS Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -67,7 +67,7 @@
             <h4 class="greeting-dynamic" data-aos="fade-up">I am <span id="typed"></span></h3>
           </div>
         </div>
-        <a href="#about">
+        <a id="scroll-button" href="#about">
           <span class="scroll-icon">
             <i class="fas fa-arrow-down"></i>
           </span>
@@ -422,23 +422,14 @@
     </main>
   </div>
 
-  <!-- Compiled and minified JavaScript -->
+  <!-- Compiled and minified JavaScript for Materialize -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- Initialize Materialize Javascript -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var sidenav = document.querySelectorAll('.sidenav');
-      M.Sidenav.init(sidenav, {});
-      var scrollspy = document.querySelectorAll('.scrollspy');
-      M.ScrollSpy.init(scrollspy, { scrollOffset: 0 });
-      var tooltip = document.querySelectorAll('.tooltipped');
-      M.Tooltip.init(tooltip, {});
-    });
-  </script>
   <!-- Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <!-- AOS Library -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- Custom script -->
   <script src="js/script.js"></script>
 </body>
