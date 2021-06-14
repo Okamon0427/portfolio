@@ -27,6 +27,17 @@ var options = {
 };
 var typed = new Typed('#typed', options);
 
+// Particles.js
+window.onload = function() {
+  Particles.init({
+    selector: '.background',
+    maxParticles: 120,
+    sizeVariations: 5,
+    speed: 0.8,
+    color: '#795548'
+  });
+};
+
 // Smooth Scroll
 $(document).ready(function() {
   $("#scroll-button").on('click', function() {
