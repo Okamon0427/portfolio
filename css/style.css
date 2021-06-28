@@ -156,6 +156,7 @@ nav .brand-logo {
   display: inline-block;
   bottom: 15%;
   left: 50%;
+  margin-left: -20px;
   font-size: 3.5rem;
   color: var(--main);
   animation: icon-scroll 0.8s linear infinite;
@@ -336,6 +337,10 @@ nav .brand-logo {
 
   .navbar-fixed {
     display: block;
+  }
+
+  #home {
+    height: calc(100vh - 64px);
   }
 }
 
