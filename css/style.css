@@ -74,6 +74,10 @@ main {
   display: none;
 }
 
+.navbar-fixed .hide-on-large-only {
+  width: 100vw;
+}
+
 nav .brand-logo {
   font-size: 1.5rem;
 }
@@ -304,6 +308,11 @@ nav .brand-logo {
   margin-bottom: 0;
 }
 
+#contact form {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
 #contact textarea {
   height: 6rem;
 }
@@ -312,9 +321,20 @@ nav .brand-logo {
   text-align: center;
 }
 
-#contact form {
-  margin: 0 auto;
-  max-width: 500px;
+.submit-button .btn {
+  background-color: var(--white);
+  color: var(--main);
+  border: 1px solid var(--main);
+}
+
+.contact-btns {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-btns .btn-floating {
+  background-color: var(--main);
 }
 
 /* Footer */
@@ -351,6 +371,10 @@ nav .brand-logo {
 @media only screen and (max-width : 600px) {
   .container {
     width: 95%;
+  }
+
+  .navbar-fixed .brand-logo {
+    font-size: 1.2rem;
   }
 
   /* #home {
@@ -399,5 +423,14 @@ nav .brand-logo {
 
   .skill-img p {
     font-size: 0.8rem;
+  }
+
+  .contact-btns .btn-floating {
+    height: 40px;
+    width: 40px;
+  }
+
+  .contact-btns .btn-floating i {
+    line-height: 40px;
   }
 }
