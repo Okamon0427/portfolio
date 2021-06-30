@@ -358,10 +358,6 @@ nav .brand-logo {
   .navbar-fixed {
     display: block;
   }
-
-  /* #home {
-    height: calc(100vh - 64px);
-  } */
 }
 
 .scroll-icon {
@@ -376,10 +372,6 @@ nav .brand-logo {
   .navbar-fixed .brand-logo {
     font-size: 1.2rem;
   }
-
-  /* #home {
-    height: calc(100vh - 56px);
-  } */
 
   #home .container {
     width: 85%;
