@@ -12,7 +12,7 @@ AOS.init({
   delay: 0,
   duration: 1000,
   easing: 'ease-in-out-back',
-  mirror: true,
+  mirror: true
 });
 
 // Typewriter Animation (Typed.js)

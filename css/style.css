@@ -5,6 +5,8 @@
   --white: #fff;
   --black: rgba(0, 0, 0, 0.87);
   --grey: #9e9e9e;
+  --sidenavWidth: 200px;
+  --sectionPaddingBottom: 20px;
 }
 
 html {
@@ -16,7 +18,7 @@ body {
 }
 
 main {
-  padding-left: 200px;
+  padding-left: var(--sidenavWidth);
 }
 
 .wrapper {
@@ -41,7 +43,7 @@ main {
   display: inline-block;
   text-decoration: none;
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 1.2rem;
   color: var(--black);
 }
 
@@ -78,10 +80,6 @@ main {
   right: 40px;
 }
 
-.navbar-fixed .hide-on-large-only {
-  width: 100vw;
-}
-
 .navbar-fixed i {
   font-size: 40px;
 }
@@ -100,7 +98,7 @@ main {
 }
 
 #slide-out.sidenav {
-  width: 200px;
+  width: var(--sidenavWidth);
 }
 
 #slide-out .logo {
@@ -181,7 +179,7 @@ main {
 
 /* About Section */
 #about {
-  padding-bottom: 20px;
+  padding-bottom: var(--sectionPaddingBottom);
 }
 
 #about .about-wrapper {
@@ -202,13 +200,9 @@ main {
   margin-top: 10px;
 }
 
-#about .about-link {
-  font-size: 18px;
-}
-
 /* Projects Section */
 #projects {
-  padding-bottom: 20px;
+  padding-bottom: var(--sectionPaddingBottom);
 }
 
 #projects .language-images {
@@ -275,7 +269,7 @@ main {
 
 /* Skills Section */
 #skills {
-  padding-bottom: 20px;
+  padding-bottom: var(--sectionPaddingBottom);
 }
 
 #skills .row {
@@ -305,7 +299,7 @@ main {
 
 /* Contact Section */
 #contact {
-  padding-bottom: 20px;
+  padding-bottom: var(--sectionPaddingBottom);
 }
 
 #contact .contact-text {
@@ -342,16 +336,6 @@ main {
   background-color: var(--main);
 }
 
-/* input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid var(--main);
-  -webkit-box-shadow: 0 1px 0 0 var(--main);
-  box-shadow: 0 1px 0 0 var(--main);
-}
-
-input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
-  color: var(--main);
-} */
-
 /* Footer */
 footer.page-footer {
   padding: 0;
@@ -382,6 +366,11 @@ footer.page-footer {
 @media only screen and (max-width : 600px) {
   .container {
     width: 95%;
+  }
+
+  .navbar-fixed {
+    top: 20px;
+    right: 20px;
   }
 
   .navbar-fixed .brand-logo {
