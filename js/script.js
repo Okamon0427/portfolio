@@ -17,7 +17,7 @@ AOS.init({
 
 // Typewriter Animation (Typed.js)
 var options = {
-  strings: ['Web ^10 Developer', 'using ^10 MERN ^10 stack', 'sushi ^10 lover'],
+  strings: ['Front ^10 End ^10 Developer', 'using ^10 MERN ^10 stack', 'sushi ^10 lover'],
   startDelay: 1500,
   typeSpeed: 60,
   backSpeed: 40,

@@ -4,6 +4,7 @@
   --link: #039be5
   --white: #fff;
   --black: rgba(0, 0, 0, 0.87);
+  --grey: #9e9e9e;
 }
 
 html {
@@ -72,21 +73,24 @@ main {
 /* Navbar */
 .navbar-fixed {
   display: none;
+  position: fixed;
+  top: 40px;
+  right: 40px;
 }
 
 .navbar-fixed .hide-on-large-only {
   width: 100vw;
 }
 
-nav .brand-logo {
-  font-size: 1.5rem;
+.navbar-fixed i {
+  font-size: 40px;
 }
 
 #slide-out .active {
   color: var(--main);
 }
 
-.active .material-icons {
+#slide-out .active .material-icons {
   color: var(--main)!important;
 }
 
@@ -95,15 +99,16 @@ nav .brand-logo {
   line-height: 60px;
 }
 
-.sidenav {
+#slide-out.sidenav {
   width: 200px;
 }
 
-.logo {
+#slide-out .logo {
   height: 150px;
+  border-bottom: 1px solid var(--grey);
 }
 
-.sidenav .logo a {
+#slide-out .logo a {
   display: block;
   text-align: center;
   height: 100%;
@@ -111,11 +116,11 @@ nav .brand-logo {
   font-size: 2rem;
 }
 
-.sidenav .page {
+#slide-out .page {
   height: 60px;
 }
 
-.sidenav .page a, .sidenav .page i {
+#slide-out .page a, #slide-out .page i {
   height: 100%;
   line-height: 60px;
   align-items: center;
@@ -131,14 +136,14 @@ nav .brand-logo {
   position: relative;
 }
 
-.greeting-wrapper {
+#home .greeting-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   margin-top: 150px;
 }
 
-.greeting-icon {
+#home .greeting-icon {
   display: inline-block;
   animation: icon-shaking 0.8s linear infinite;
 }
@@ -151,11 +156,11 @@ nav .brand-logo {
   100% {transform: translateX(0px) rotateZ(0deg)}
 }
 
-#typed {
+#home #typed {
   color: var(--main);
 }
 
-.scroll-icon {
+#home .scroll-icon {
   position: absolute;
   display: inline-block;
   bottom: 15%;
@@ -179,25 +184,25 @@ nav .brand-logo {
   padding-bottom: 20px;
 }
 
-.about-wrapper {
+#about .about-wrapper {
   margin-top: 20px;
 }
 
-.profile-pic {
+#about .profile-pic {
   display: block;
   margin: 0 auto;
   height: 250px;
 }
 
-.about-text {
+#about .about-text {
   margin: 0;
 }
 
-.about-contact {
+#about .about-contact {
   margin-top: 10px;
 }
 
-.about-link {
+#about .about-link {
   font-size: 18px;
 }
 
@@ -206,24 +211,24 @@ nav .brand-logo {
   padding-bottom: 20px;
 }
 
-.language-images {
+#projects .language-images {
   margin: 10px 0;
 }
 
-.language-images span {
+#projects .language-images span {
   display: inline-block;
   vertical-align: top;
   line-height: 25px;
   font-weight: bold;
 }
 
-.language-image {
+#projects .language-image {
   width: 25px;
   height: 25px;
   margin: 0 2.5px;
 }
 
-.bounce {
+#projects .bounce {
   animation: bounce-animation 0.5s linear 0s 1;
 }
 
@@ -238,33 +243,33 @@ nav .brand-logo {
   100% {transform: translateY(0px)}
 }
 
-.project {
+#projects .project {
   margin: 25px 0;
   display: flex;
   flex-wrap: wrap;
 }
 
-.project-image-wrapper {
+#projects .project-image-wrapper {
   margin: auto;
   text-align: center;
 }
 
-.project-image {
+#projects .project-image {
   width: 100%;
 }
 
-.company-title {
+#projects .company-title {
   font-weight: bold;
   padding-bottom: 5px;
 }
 
-.company-title a {
+#projects .company-title a {
   text-decoration: underline;
   text-decoration-color: white;
   transition: 0.5s;
 }
 
-.company-title a:hover {
+#projects .company-title a:hover {
   text-decoration-color: var(--link);
 }
 
@@ -277,12 +282,12 @@ nav .brand-logo {
   margin-bottom: 20px;
 }
 
-.skill-img {
+#skills .skill-img {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.skill-img img {
+#skills .skill-img img {
   display: block;
   margin: 0 auto;
   height: 50px;
@@ -290,11 +295,11 @@ nav .brand-logo {
   transition: 0.3s;
 }
 
-.skill-img img:hover {
+#skills .skill-img img:hover {
   transform: scale(1.2, 1.2);
 }
 
-.skill-img p {
+#skills .skill-img p {
   margin: 0;
 }
 
@@ -303,7 +308,7 @@ nav .brand-logo {
   padding-bottom: 20px;
 }
 
-.contact-text {
+#contact .contact-text {
   text-align: center;
   margin-bottom: 0;
 }
@@ -321,24 +326,34 @@ nav .brand-logo {
   text-align: center;
 }
 
-.submit-button .btn {
+#contact .submit-button .btn {
   background-color: var(--white);
   color: var(--main);
   border: 1px solid var(--main);
 }
 
-.contact-btns {
+#contact .contact-btns {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.contact-btns .btn-floating {
+#contact .contact-btns .btn-floating {
   background-color: var(--main);
 }
 
+/* input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid var(--main);
+  -webkit-box-shadow: 0 1px 0 0 var(--main);
+  box-shadow: 0 1px 0 0 var(--main);
+}
+
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+  color: var(--main);
+} */
+
 /* Footer */
-.page-footer {
+footer.page-footer {
   padding: 0;
   text-align: center;
 }
@@ -377,52 +392,52 @@ nav .brand-logo {
     width: 85%;
   }
 
-  .greeting-name {
+  #home .greeting-name {
     font-size: 2.5rem;
     margin-bottom: 10px;
   }
   
-  .greeting-dynamic {
+  #home .greeting-dynamic {
     font-size: 1.5rem;
     margin-top: 10px;
   }
 
-  .scroll-icon {
+  #home .scroll-icon {
     bottom: 25%;
   }
 
-  .about-text {
+  #about .about-text {
     margin: 14px 0;
   }
 
-  .project {
+  #projects .project {
     flex-direction: column;
     margin: 50px 0;
   }
 
-  .reverse {
+  #projects .reverse {
     flex-direction: column-reverse;
   }
 
-  .project-image {
+  #projects .project-image {
     max-width: none;
   }
 
-  .skill-img img {
+  #skills .skill-img img {
     height: 30px;
     width: 30px;
   }
 
-  .skill-img p {
+  #skills.skill-img p {
     font-size: 0.8rem;
   }
 
-  .contact-btns .btn-floating {
+  #contact .contact-btns .btn-floating {
     height: 40px;
     width: 40px;
   }
 
-  .contact-btns .btn-floating i {
+  #contact .contact-btns .btn-floating i {
     line-height: 40px;
   }
 }
