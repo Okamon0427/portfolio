@@ -92,11 +92,6 @@ main {
   color: var(--main)!important;
 }
 
-#slide-out i {
-  margin-right: 16;
-  line-height: 60px;
-}
-
 #slide-out.sidenav {
   width: var(--sidenavWidth);
 }
@@ -122,6 +117,10 @@ main {
   height: 100%;
   line-height: 60px;
   align-items: center;
+}
+
+#slide-out i {
+  margin-right: 16px;
 }
 
 /* Home Section */
