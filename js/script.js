@@ -70,12 +70,19 @@ $(function() {
 const handleSubmit = (e) => {
   e.preventDefault()
   let myForm = document.getElementById('form');
-  let formData = new FormData(myForm)
+  let formData = new FormData(myForm);
   fetch('/', {
     method: 'POST',
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString()
-  }).then(() => console.log('Form successfully submitted')).catch((error) =>
-    alert(error))
+  })
+  .then(() => {
+      M.toast({
+        html: 'Submitted successfully!',
+        displayLength: 5000
+      });
+    }
+  )
+  .catch((error) => alert(error));
 };
 document.querySelector("form").addEventListener("submit", handleSubmit);
