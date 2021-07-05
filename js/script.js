@@ -67,7 +67,6 @@ $(function() {
 });
 
 // Submit form with AJAX
-document.querySelector("form").addEventListener("submit", handleSubmit);
 const handleSubmit = (e) => {
   e.preventDefault()
   let myForm = document.getElementById('form');
@@ -78,4 +77,5 @@ const handleSubmit = (e) => {
     body: new URLSearchParams(formData).toString()
   }).then(() => console.log('Form successfully submitted')).catch((error) =>
     alert(error))
-}
+};
+document.querySelector("form").addEventListener("submit", handleSubmit);
