@@ -98,7 +98,6 @@ main {
 
 #slide-out .logo {
   height: 150px;
-  border-bottom: 1px solid var(--grey);
 }
 
 #slide-out .logo a {
@@ -418,6 +417,14 @@ footer.page-footer {
 
   #skills.skill-img p {
     font-size: 0.8rem;
+  }
+
+  #contact .input-field {
+    margin-bottom: 0;
+  }
+
+  #contact .submit-button {
+    margin-top: 20px;
   }
 
   #contact .contact-btns .btn-floating {
