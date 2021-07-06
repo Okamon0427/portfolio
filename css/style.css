@@ -101,11 +101,17 @@ main {
 }
 
 #slide-out .logo a {
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
-  line-height: 150px;
   font-size: 2rem;
+  /* font-family: 'Zen Tokyo Zoo', cursive; */
+  font-family: 'Tourney', cursive;
+}
+
+#slide-out .logo a:hover {
+  background-color: inherit;
 }
 
 #slide-out .page {
@@ -182,6 +188,7 @@ main {
 
 #about .about-wrapper {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #about .profile-pic {
@@ -250,6 +257,10 @@ main {
   width: 100%;
 }
 
+#projects .project-detail-wrapper {
+  margin: auto;
+}
+
 #projects .company-title {
   font-weight: bold;
   padding-bottom: 5px;
@@ -311,11 +322,20 @@ main {
 }
 
 #contact textarea {
-  height: 6rem;
+  height: 8rem;
+}
+
+#contact .input-field {
+  margin-bottom: 0;
+}
+
+#contact #recapcha {
+  margin-top: 15px;
 }
 
 #contact .submit-button {
   text-align: center;
+  margin-top: 15px;
 }
 
 #contact .submit-button .btn {
@@ -417,14 +437,6 @@ footer.page-footer {
 
   #skills.skill-img p {
     font-size: 0.8rem;
-  }
-
-  #contact .input-field {
-    margin-bottom: 0;
-  }
-
-  #contact .submit-button {
-    margin-top: 20px;
   }
 
   #contact .contact-btns .btn-floating {
