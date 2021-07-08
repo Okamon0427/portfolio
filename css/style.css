@@ -1,4 +1,4 @@
-/* Overall */
+/* Common */
 :root {
   --main: #4caf50;
   --main2: #81c784;
@@ -71,6 +71,16 @@ main {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+#projects .company-title a, #about .about-text a {
+  text-decoration: underline;
+  text-decoration-color: white;
+  transition: 0.5s;
+}
+
+#projects .company-title a:hover, #about .about-text a:hover {
+  text-decoration-color: var(--link);
 }
 
 /* Navbar */
@@ -203,6 +213,10 @@ main {
   margin: 0;
 }
 
+#about .about-text a:hover {
+  text-decoration-color: var(--link);
+}
+
 #about .about-contact {
   margin-top: 20px;
 }
@@ -282,16 +296,6 @@ main {
 
 #projects .card-content p {
   margin-top: 5px;
-}
-
-#projects .company-title a {
-  text-decoration: underline;
-  text-decoration-color: white;
-  transition: 0.5s;
-}
-
-#projects .company-title a:hover {
-  text-decoration-color: var(--link);
 }
 
 /* Skills Section */
