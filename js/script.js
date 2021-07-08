@@ -15,7 +15,7 @@ AOS.init({
   mirror: true
 });
 
-// Typewriter Animation (Typed.js)
+// Typewriter Animation on the home section (Typed.js)
 var options = {
   strings: ['Front ^10 End ^10 Developer', 'using ^10 MERN ^10 stack', 'sushi ^10 lover'],
   startDelay: 1500,
@@ -26,6 +26,31 @@ var options = {
   loop: true
 };
 var typed = new Typed('#typed', options);
+
+// Typewriter Animation on the contact section (Typed.js)
+var options2 = {
+  strings: ['ABCDEFGHIJKLMN'],
+  typeSpeed: 60,
+  loop: false,
+  cursorChar: "",
+};
+
+// Execute itype with scroll event
+$(function() {
+  var animationFlag = false;
+  $(window).on("scroll",function(){
+    var scroll = $(window).scrollTop();
+    var example = $("#typed2").offset().top;
+    var screen_height = window.innerHeight;
+    var example_height = $("#typed2").innerHeight();
+    if(scroll > example - (screen_height / 2) + (example_height / 2)) {
+      if(!animationFlag) {
+        animationFlag = true;
+        var typed2 = new Typed('#typed2', options2);
+      } 
+    }
+  });
+});
 
 // Particles.js
 window.onload = function() {
