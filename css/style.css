@@ -1,7 +1,8 @@
 /* Overall */
 :root {
   --main: #4caf50;
-  --link: #039be5
+  --main2: #81c784;
+  --link: #039be5;
   --white: #fff;
   --black: rgba(0, 0, 0, 0.87);
   --grey: #9e9e9e;
@@ -203,7 +204,7 @@ main {
 }
 
 #about .about-contact {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 /* Projects Section */
@@ -262,9 +263,25 @@ main {
   margin: auto;
 }
 
+#projects .card-title {
+  display: inline;
+  background-image: linear-gradient(transparent 65%, var(--main2) 65%);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+}
+
+#projects .card-content:hover .card-title {
+  background-size: 100% 100%;
+  transition: .3s ease-out;
+}
+
 #projects .company-title {
   font-weight: bold;
   padding-bottom: 5px;
+}
+
+#projects .card-content p {
+  margin-top: 5px;
 }
 
 #projects .company-title a {

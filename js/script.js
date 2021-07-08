@@ -19,8 +19,8 @@ AOS.init({
 var options = {
   strings: ['Front ^10 End ^10 Developer', 'using ^10 MERN ^10 stack', 'sushi ^10 lover'],
   startDelay: 1500,
-  typeSpeed: 60,
-  backSpeed: 40,
+  typeSpeed: 50,
+  backSpeed: 20,
   backDelay: 2000,
   smartBackspace: false,
   loop: true
@@ -29,8 +29,8 @@ var typed = new Typed('#typed', options);
 
 // Typewriter Animation on the contact section (Typed.js)
 var options2 = {
-  strings: ['ABCDEFGHIJKLMN'],
-  typeSpeed: 60,
+  strings: ['Feel free to reach out to me!'],
+  typeSpeed: 50,
   loop: false,
   cursorChar: "",
 };
