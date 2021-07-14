@@ -88,10 +88,10 @@
             </div>
           </div>
           <div class="about-wrapper row">
-            <div class="col s12 m6 l5 xl4">
+            <div class="col s12 m5 l5 xl4">
               <img class="profile-pic" src="images/others/face.jpg" alt="Image">
             </div>
-            <div class="col s12 m6 l7 xl8">
+            <div class="col s12 m7 l7 xl8">
               <p class="about-text">
                 <span data-aos="fade-up" data-aos-once="true">
                   I am a detail-oriented Software Developer based in Toronto. While studying Software Engineering at Sheridan College, I gained hands-on experiences such as building CRM web applications at <a href="https://bstarsolutions.com" target="_blank">BStar Solutions</a>. In addition to that, I developed and managing <a href="https://thaleiahome.com" target="_blank">Thaleia Home</a>, a retail website where you can buy lovely home decor products.
@@ -389,7 +389,67 @@
               </p>
             </div>
           </div>
-          <div class="row">
+
+          <div class="contact-content row">
+            <div class="contact-btns-wrapper col s12 m5 l4">
+              <div class="row contact-btns" data-aos="zoom-in-up" data-aos-once="true">
+                <div class="contact-btn col s4 m12">
+                  <a href="mailto:takutookamoto0427@gmail.com">
+                    <i class="far fa-envelope"></i> <span class="btn-text">Send me an e-mail</span>
+                  </a>
+                </div>
+                <div class="contact-btn col s4 m12">
+                  <a href="https://www.linkedin.com/in/takuto-okamoto" target="_blank">
+                    <i class="fab fa-linkedin"></i> <span class="btn-text">Connect with me</span>
+                  </a>
+                </div>
+                <div class="contact-btn col s4 m12">
+                  <a href="https://github.com/Okamon0427" target="_blank">
+                    <i class="fab fa-github"></i> <span class="btn-text">See my projects</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-wrapper col s12 m7 l8">
+              <form id="form" name="contact" method="POST" data-netlify="true">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="name" type="text" name="name" class="validate" required>
+                    <label for="name">Name</label>
+                    <span class="helper-text" data-error="Required"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email" type="email" name="email" class="validate">
+                    <label for="email">Email</label>
+                    <span class="helper-text" data-error="Invalid Email"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="subject" type="text" name="subject" class="validate">
+                    <label for="subject">Subject</label>
+                    <span class="helper-text"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea" name="message" class="materialize-textarea"></textarea>
+                    <label for="textarea">Message</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="submit-button col s12">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div> 
+          </div>
+
+          <!-- <div class="row">
             <div class="col s12">
               <form id="form" name="contact" method="POST" data-netlify="true">
                 <div class="row">
@@ -425,19 +485,19 @@
                   </div>
                 </div>
 
-                <div class="row contact-btns" data-aos="zoom-in-up" data-aos-once="true">
+                <div class="row contact-btns" data-aos="zoom-in-up" data-aos-delay="0" data-aos-once="true">
                   <div class="col s4">
-                    <a class="btn-floating btn-large waves-effect waves-light" href="mailto:takutookamoto0427@gmail.com">
+                    <a href="mailto:takutookamoto0427@gmail.com">
                       <i class="far fa-envelope"></i>
                     </a>
                   </div>
                   <div class="col s4">
-                    <a class="btn-floating btn-large waves-effect waves-light" href="https://www.linkedin.com/in/takuto-okamoto" target="_blank">
+                    <a href="https://www.linkedin.com/in/takuto-okamoto" target="_blank">
                       <i class="fab fa-linkedin"></i>
                     </a>
                   </div>
                   <div class="col s4">
-                    <a class="btn-floating btn-large waves-effect waves-light" href="https://github.com/Okamon0427" target="_blank">
+                    <a href="https://github.com/Okamon0427" target="_blank">
                       <i class="fab fa-github"></i>
                     </a>
                   </div>
@@ -445,7 +505,8 @@
 
               </form>
             </div>
-          </div>
+          </div> -->
+
         </div>
       </section>
 

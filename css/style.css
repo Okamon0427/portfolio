@@ -12,6 +12,7 @@
 
 html {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -206,7 +207,7 @@ main {
 #about .profile-pic {
   display: block;
   margin: 0 auto;
-  height: 250px;
+  width: 250px;
 }
 
 #about .about-text {
@@ -326,6 +327,7 @@ main {
 
 #skills .skill-img p {
   margin: 0;
+  font-size: 1.3rem;
 }
 
 /* Contact Section */
@@ -335,16 +337,20 @@ main {
 
 #contact .contact-text {
   text-align: center;
-  margin-bottom: 0;
+  margin: 0;
+  height: 40px;
+}
+
+#contact .contact-form-wrapper {
+  margin-bottom: 20px;
 }
 
 #contact form {
   margin: 0 auto;
-  max-width: 500px;
 }
 
 #contact textarea {
-  height: 8rem;
+  height: 6rem;
 }
 
 #contact .input-field {
@@ -362,14 +368,34 @@ main {
   border: 1px solid var(--main);
 }
 
+#contact .contact-content {
+  display: flex;
+}
+
 #contact .contact-btns {
-  text-align: center;
-  margin-top: 30px;
+  text-align: left;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
-#contact .contact-btns .btn-floating {
-  background-color: var(--main);
+#contact .contact-btn {
+  margin-bottom: 10px;
+}
+
+#contact .contact-btn a {
+  font-size: 40px;
+  color: var(--black);
+}
+
+#contact i {
+  text-align: center;
+  width: 40px;
+}
+
+#contact .btn-text {
+  position: relative;
+  bottom: 8px;
+  font-size: 1rem;
 }
 
 /* Footer */
@@ -393,13 +419,21 @@ footer.page-footer {
   .navbar-fixed {
     display: block;
   }
-}
 
-.scroll-icon {
-  bottom: 20%;
+  .scroll-icon {
+    bottom: 20%;
+  }
+
+  #about .profile-pic {
+    width: 200px;
+  }
 }
 
 @media only screen and (max-width : 600px) {
+  html {
+    font-size: 14px;
+  }
+
   .container {
     width: 95%;
   }
@@ -453,16 +487,31 @@ footer.page-footer {
     width: 30px;
   }
 
-  #skills.skill-img p {
+  #skills .skill-img p {
     font-size: 0.8rem;
   }
 
-  #contact .contact-btns .btn-floating {
-    height: 40px;
-    width: 40px;
+  #contact .contact-text {
+    height: 25px;
   }
 
-  #contact .contact-btns .btn-floating i {
-    line-height: 40px;
+  #contact .contact-content {
+    flex-direction: column;
+  }
+
+  #contact .contact-btns-wrapper {
+    order: 2;
+  }
+
+  #contact .contact-btn {
+    text-align: center;
+  }
+
+  #contact .contact-btn a {
+    font-size: 25px;
+  }
+
+  #contact .btn-text {
+    display: none;
   }
 }
