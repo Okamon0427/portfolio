@@ -76,7 +76,7 @@ main {
 
 #projects .company-title a, #about .about-text a {
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: var(--white);
   transition: 0.5s;
 }
 
@@ -119,7 +119,6 @@ main {
   height: 100%;
   font-size: 2rem;
   line-height: 2.5rem;
-  /* font-family: 'Zen Tokyo Zoo', cursive; */
   font-family: 'Tourney', cursive;
 }
 
@@ -145,7 +144,13 @@ main {
 #home {
   position: relative;
   height: 100vh;
-  min-height: -webkit-fill-available;
+  background-image: url(../images/others/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home .bg-mask {
+  height: 100%;
 }
 
 #home .container {
@@ -157,6 +162,11 @@ main {
   top: 0;
   left: 0;
   margin-top: 150px;
+}
+
+#home .greeting-name, #home .greeting-dynamic {
+  color: var(--white);
+  text-shadow:1px 1px 5px var(--black);
 }
 
 #home .greeting-icon {
@@ -172,10 +182,6 @@ main {
   100% {transform: translateX(0px) rotateZ(0deg)}
 }
 
-#home #typed {
-  color: var(--main);
-}
-
 #home .scroll-icon {
   position: absolute;
   display: inline-block;
@@ -183,7 +189,8 @@ main {
   left: 50%;
   margin-left: -20px;
   font-size: 3.5rem;
-  color: var(--main);
+  color: var(--white);
+  text-shadow:1px 1px 5px var(--black);
   animation: icon-scroll 0.8s linear infinite;
 }
 
@@ -209,6 +216,7 @@ main {
   display: block;
   margin: 0 auto;
   width: 250px;
+  border-radius: 50%;
 }
 
 #about .about-text {
@@ -450,6 +458,10 @@ footer.page-footer {
 
   .navbar-fixed .brand-logo {
     font-size: 1.2rem;
+  }
+
+  #home {
+    background-position: 30%;
   }
 
   #home .container {

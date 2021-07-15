@@ -14,7 +14,6 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
   <!-- AOS Library -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
@@ -26,7 +25,7 @@
 
     <!-- mobile nav -->
     <div class="navbar-fixed" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="500">
-      <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
+      <a href="#" aria-label="Toggle visibility of the side navigation" data-target="slide-out" class="sidenav-trigger hide-on-large-only">
         <i class="material-icons green-text">menu</i>
       </a>
     </div>
@@ -34,25 +33,25 @@
     <!-- desktop nav -->
     <ul id="slide-out" class="sidenav sidenav-fixed grey lighten-5">
       <li class="logo" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="500">
-        <a href="#home">Takuto's Portfolio</a>
+        <a href="#home" aria-label="Navigate to the top of the page">Takuto's Portfolio</a>
       </li>
       <li class="page" data-aos="fade-right" data-aos-duration="750" data-aos-delay="50">
-        <a class="waves-effect" href="#about">
+        <a class="waves-effect" href="#about" aria-label="Navigate to the About section">
           <i class="material-icons">person</i>About
         </a>
       </li>
       <li class="page" data-aos="fade-right" data-aos-duration="750" data-aos-delay="100">
-        <a class="waves-effect" href="#projects">
+        <a class="waves-effect" href="#projects" aria-label="Navigate to the Projects section">
           <i class="material-icons">desktop_mac</i>Projects
         </a>
       </li>
       <li class="page" data-aos="fade-right" data-aos-duration="750" data-aos-delay="150">
-        <a class="waves-effect" href="#skills">
+        <a class="waves-effect" href="#skills" aria-label="Navigate to the Skills section">
           <i class="material-icons">code</i>Skills
         </a>
       </li>
       <li class="page" data-aos="fade-right" data-aos-duration="750" data-aos-delay="200">
-        <a class="waves-effect" href="#contact">
+        <a class="waves-effect" href="#contact" aria-label="Navigate to the Contact section">
           <i class="material-icons">contact_mail</i>Contact
         </a>
       </li>
@@ -61,22 +60,24 @@
     <main>
       <!-- Top Section -->
       <section id="home" class="scrollspy">
-        <canvas class="background"></canvas>
-        <div class="container">
-          <div class="greeting-wrapper">
-            <h2 class="greeting-name" data-aos="fade-down">
-              Hi, I'm Takuto!<span class="greeting-icon">👋</span>
-            </h2>
-            <h4 class="greeting-dynamic" data-aos="fade-up">
-              I am <span id="typed"></span>
-            </h4>
+        <div class="bg-mask">
+          <!-- <canvas class="background"></canvas> -->
+          <div class="container">
+            <div class="greeting-wrapper">
+              <h2 class="greeting-name" data-aos="fade-down">
+                Hi, I'm Takuto!<span class="greeting-icon">👋</span>
+              </h2>
+              <h4 class="greeting-dynamic" data-aos="fade-up">
+                I am <span id="typed"></span>
+              </h4>
+            </div>
           </div>
-        </div>
-        <a id="scroll-button" href="#about" data-aos="zoom-in" data-aos-delay="1500">
-          <span class="scroll-icon">
-            <i class="fas fa-arrow-down"></i>
-          </span>
-        </a>
+          <a id="scroll-button" href="#about" aria-label="Navigate to the About section" data-aos="zoom-in" data-aos-delay="1500">
+            <span class="scroll-icon">
+              <i class="fas fa-arrow-down"></i>
+            </span>
+          </a>
+          </div>
       </section>
 
       <!-- About Section -->
@@ -89,12 +90,12 @@
           </div>
           <div class="about-wrapper row">
             <div class="col s12 m5 l5 xl4">
-              <img class="profile-pic" src="images/others/face.jpg" alt="Image" loading="lazy">
+              <img class="profile-pic" src="images/others/face.jpg" alt="Face picture" loading="lazy">
             </div>
             <div class="col s12 m7 l7 xl8">
               <p class="about-text">
                 <span data-aos="fade-up" data-aos-once="true">
-                  I am a detail-oriented Front End Developer based in Toronto. While studying Software Engineering at Sheridan College, I gained hands-on experiences such as building CRM web applications at <a href="https://bstarsolutions.com" target="_blank">BStar Solutions</a>. In addition to that, I developed and managing <a href="https://thaleiahome.com" target="_blank">Thaleia Home</a>, a retail website where you can buy lovely home decor products.
+                  I am a detail-oriented Front End Developer based in Toronto. While studying Software Engineering at Sheridan College, I gained hands-on experiences such as building CRM web applications at <a href="https://bstarsolutions.com" target="_blank" aria-label="Link to the BStar Solutions page">BStar Solutions</a>. In addition to that, I developed and managing <a href="https://thaleiahome.com" target="_blank" aria-label="Link to Thaleia Home page">Thaleia Home</a>, a retail website where you can buy lovely home decor products.
                 </span>
                 <br><br>
                 <span data-aos="fade-up" data-aos-once="true" data-aos-delay="300">
@@ -102,10 +103,10 @@
                 </span>
               </p>
               <div class="about-contact" data-aos="fade-up" data-aos-once="true" data-aos-delay="600">
-                <a class="link about-link" href="https://www.linkedin.com/in/takuto-okamoto" target="_blank">
+                <a class="link about-link" href="https://www.linkedin.com/in/takuto-okamoto" target="_blank" aria-label="Link to the author's LinkedIn account">
                   <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <a class="link about-link" href="https://github.com/Okamon0427" target="_blank">
+                <a class="link about-link" href="https://github.com/Okamon0427" target="_blank" aria-label="Link to the author's GitHub account">
                   <i class="fab fa-github"></i> GitHub
                 </a>
               </div>
@@ -143,10 +144,10 @@
                     <img class="language-image" src="images/techs/heroku.svg" alt="Heroku" title="Heroku" loading="lazy">
                   </div>
                   <div>
-                    <a class="link" href="https://useful-todo-app.herokuapp.com" target="_blank">
+                    <a class="link" href="https://useful-todo-app.herokuapp.com" target="_blank" aria-label="Link to the Todo App page">
                       <i class="fas fa-external-link-alt"></i> Live
                     </a>
-                    <a class="link" href="https://github.com/Okamon0427/todo_app" target="_blank">
+                    <a class="link" href="https://github.com/Okamon0427/todo_app" target="_blank" aria-label="Link to the Todo App source code page">
                       <i class="fab fa-github"></i> GitHub
                     </a>
                   </div>
@@ -179,10 +180,10 @@
                     <img class="language-image" src="images/techs/firebase.svg" alt="Firebase" title="Firebase" loading="lazy">
                   </div>
                   <div>
-                    <a class="link" href="https://gpa-calculator-14a4b.web.app" target="_blank">
+                    <a class="link" href="https://gpa-calculator-14a4b.web.app" target="_blank" aria-label="Link to the GPA Calculator page">
                       <i class="fas fa-external-link-alt"></i> Live
                     </a>
-                    <a class="link" href="https://github.com/Okamon0427/gpa-calculator" target="_blank">
+                    <a class="link" href="https://github.com/Okamon0427/gpa-calculator" target="_blank" aria-label="Link to the GPA Caluculator source code page">
                       <i class="fab fa-github"></i> GitHub
                     </a>
                   </div>
@@ -211,10 +212,10 @@
                     <img class="language-image" src="images/techs/heroku.svg" alt="Heroku" title="Heroku" loading="lazy">
                   </div>
                   <div>
-                    <a class="link" href="https://study-abroad-2020.herokuapp.com" target="_blank">
+                    <a class="link" href="https://study-abroad-2020.herokuapp.com" target="_blank" aria-label="Link to the Study Abroad page">
                       <i class="fas fa-external-link-alt"></i> Live
                     </a>
-                    <a class="link" href="https://github.com/Okamon0427/study_abroad" target="_blank">
+                    <a class="link" href="https://github.com/Okamon0427/study_abroad" target="_blank" aria-label="Link to the Study Abroad source code page">
                       <i class="fab fa-github"></i> GitHub
                     </a>
                   </div>
@@ -237,7 +238,9 @@
                   <span class="card-title">CRM Web Application</span>
                   <p class="company-title">
                     My Roll: Front End Developer at 
-                    <a href="https://bstarsolutions.com" target="_blank">BStar Solutions</a> 
+                    <a href="https://bstarsolutions.com" target="_blank" aria-label="Link to the BStar Solutions page">
+                      BStar Solutions
+                    </a> 
                     (Internship)
                   </p>
                   <p>
@@ -273,16 +276,16 @@
                     <img class="language-image" src="images/techs/php.svg" alt="PHP" title="PHP" loading="lazy">
                   </div>
                   <div>
-                    <a class="link" href="https://thaleiahome.com" target="_blank">
+                    <a class="link" href="https://thaleiahome.com" target="_blank" aria-label="Link to the Thaleia Home page">
                       <i class="fas fa-external-link-alt"></i> Live
                     </a>
-                    <a class="link" href="https://www.facebook.com/thaleiahome" target="_blank">
+                    <a class="link" href="https://www.facebook.com/thaleiahome" target="_blank" aria-label="Link to the Thaleia Home Facebook page">
                       <i class="fab fa-facebook"></i> Facebook
                     </a>
-                    <a class="link" href="https://www.instagram.com/thaleiahome" target="_blank">
+                    <a class="link" href="https://www.instagram.com/thaleiahome" target="_blank" aria-label="Link to the Thaleia Home Instagram page">
                       <i class="fab fa-instagram"></i> Instagram
                     </a>
-                    <a class="link" href="https://www.pinterest.ca/thaleiahome" target="_blank">
+                    <a class="link" href="https://www.pinterest.ca/thaleiahome" target="_blank" aria-label="Link to the Thaleia Home Pintarest page">
                       <i class="fab fa-pinterest"></i> Pintarest
                     </a>
                   </div>
@@ -395,17 +398,17 @@
             <div class="contact-btns-wrapper col s12 m5 l4">
               <div class="row contact-btns" data-aos="zoom-in-up" data-aos-once="true">
                 <div class="contact-btn col s4 m12">
-                  <a href="mailto:takutookamoto0427@gmail.com">
+                  <a href="mailto:takutookamoto0427@gmail.com" aria-label="Send an email to the author">
                     <i class="far fa-envelope"></i> <span class="btn-text">Send me an e-mail</span>
                   </a>
                 </div>
                 <div class="contact-btn col s4 m12">
-                  <a href="https://www.linkedin.com/in/takuto-okamoto" target="_blank">
+                  <a href="https://www.linkedin.com/in/takuto-okamoto" target="_blank" aria-label="Link to the author's LinkedIn account">
                     <i class="fab fa-linkedin"></i> <span class="btn-text">Connect with me</span>
                   </a>
                 </div>
                 <div class="contact-btn col s4 m12">
-                  <a href="https://github.com/Okamon0427" target="_blank">
+                  <a href="https://github.com/Okamon0427" target="_blank" aria-label="Link to the author's GitHub account">
                     <i class="fab fa-github"></i> <span class="btn-text">See my projects</span>
                   </a>
                 </div>
@@ -413,7 +416,7 @@
             </div>
 
             <div class="contact-form-wrapper col s12 m7 l8">
-              <form id="form" name="contact" method="POST" data-netlify="true">
+              <form id="form" name="contact" method="POST" aria-label="Contact to the author" data-netlify="true">
                 <div class="row">
                   <div class="input-field col s12">
                     <input id="name" type="text" name="name" class="validate" required>
@@ -443,7 +446,7 @@
                 </div>
                 <div class="row">
                   <div class="submit-button col s12">
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                    <button class="btn waves-effect waves-light" type="submit" name="action" aria-label="Submit form to the author">Submit</button>
                   </div>
                 </div>
               </form>
