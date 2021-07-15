@@ -6,6 +6,7 @@
   --white: #fff;
   --black: rgba(0, 0, 0, 0.87);
   --grey: #9e9e9e;
+  --overlay: rgba(0, 0, 0, 0.3);
   --sidenavWidth: 220px;
   --sectionPaddingBottom: 20px;
 }
@@ -64,14 +65,6 @@ main {
 
 .link:hover::after {
   transform: scale(1, 1);
-}
-
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
 #projects .company-title a, #about .about-text a {
@@ -151,6 +144,7 @@ main {
 
 #home .bg-mask {
   height: 100%;
+  background-color: var(--overlay);
 }
 
 #home .container {
@@ -480,6 +474,10 @@ footer.page-footer {
 
   #home .scroll-icon {
     bottom: 25%;
+  }
+
+  #about .profile-pic {
+    margin-bottom: 20px;
   }
 
   #about .about-text {
