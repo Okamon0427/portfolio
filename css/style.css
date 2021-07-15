@@ -337,7 +337,6 @@ main {
 
 #contact .contact-text {
   text-align: center;
-  margin: 0;
   height: 40px;
 }
 
@@ -379,12 +378,17 @@ main {
 }
 
 #contact .contact-btn {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 #contact .contact-btn a {
   font-size: 40px;
   color: var(--black);
+  transition: all 0.3s ease-in-out;
+}
+
+#contact .contact-btn a:hover {
+  color: var(--main);
 }
 
 #contact i {
@@ -505,6 +509,7 @@ footer.page-footer {
 
   #contact .contact-btn {
     text-align: center;
+    margin-bottom: 10px;
   }
 
   #contact .contact-btn a {
