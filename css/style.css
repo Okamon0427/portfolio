@@ -295,11 +295,16 @@ main {
 
 #projects .company-title {
   font-weight: bold;
-  padding-bottom: 5px;
+  padding-top: 10px;
 }
 
-#projects .card-content p {
-  margin-top: 5px;
+#projects .card-description {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#projects .description-emphasize {
+  font-weight: bold;
 }
 
 /* Skills Section */
