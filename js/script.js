@@ -32,7 +32,7 @@ var options2 = {
   strings: ['Feel free to reach out to me!'],
   typeSpeed: 50,
   loop: false,
-  cursorChar: "",
+  cursorChar: ""
 };
 
 // Execute itype with scroll event
@@ -63,7 +63,7 @@ $(document).ready(function() {
   });
 });
 
-// Bounce techs icon in project section
+// Bounce each techs icon randomly in the project section
 $(function() {
   var elements = $(".language-image");
   setInterval(function() {
