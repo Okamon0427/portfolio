@@ -140,8 +140,6 @@ main {
   background-image: url(../images/others/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: var(--sidenavWidth);
 }
 
 #home .bg-mask {
@@ -432,10 +430,6 @@ footer.page-footer {
 
   .navbar-fixed {
     display: block;
-  }
-
-  #home {
-    background-position: 0%;
   }
 
   .scroll-icon {
