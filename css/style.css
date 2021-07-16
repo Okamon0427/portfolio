@@ -275,6 +275,7 @@ main {
 
 #projects .project-image {
   width: 100%;
+  max-width: 300px;
 }
 
 #projects .project-detail-wrapper {
@@ -496,10 +497,6 @@ footer.page-footer {
 
   #projects .reverse {
     flex-direction: column-reverse;
-  }
-
-  #projects .project-image {
-    max-width: none;
   }
 
   #skills .skill-img img {
