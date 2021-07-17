@@ -30,7 +30,7 @@ main {
 }
 
 .container {
-  width: 85%;
+  width: 90%;
 }
 
 .row {
@@ -46,7 +46,6 @@ main {
   display: inline-block;
   text-decoration: none;
   margin-right: 10px;
-  font-size: 1.2rem;
   color: var(--black);
 }
 
@@ -121,7 +120,7 @@ main {
 }
 
 #slide-out .page {
-  height: 80px;
+  height: 60px;
 }
 
 #slide-out .page i {
@@ -130,7 +129,7 @@ main {
 
 #slide-out .page a, #slide-out .page i {
   height: 100%;
-  line-height: 80px;
+  line-height: 60px;
   align-items: center;
   font-size: 1.2rem;
 }
@@ -223,12 +222,13 @@ main {
   margin: 0;
 }
 
-#about .about-text a:hover {
-  text-decoration-color: var(--link);
+#about .about-text span {
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
-#about .about-contact {
-  margin-top: 20px;
+#about .about-text a:hover {
+  text-decoration-color: var(--link);
 }
 
 /* Projects Section */
@@ -236,20 +236,24 @@ main {
   padding-bottom: var(--sectionPaddingBottom);
 }
 
+#projects .card-content {
+  padding: 12px;
+}
+
 #projects .language-images {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 #projects .language-images span {
   display: inline-block;
   vertical-align: top;
-  line-height: 25px;
+  line-height: 20px;
   font-weight: bold;
 }
 
 #projects .language-image {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin: 0 2.5px;
 }
 
@@ -307,12 +311,12 @@ main {
 }
 
 #projects .card-description {
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin: 10px 0;
 }
 
 #projects .description-emphasize {
   font-weight: bold;
+  color: var(--main);
 }
 
 /* Skills Section */
@@ -424,13 +428,11 @@ footer.page-footer {
   text-align: center;
 }
 
-/* Media Query */
-@media only screen and (max-width : 1200px) {
-  .card .card-content {
-    padding: 12px;
-  }
+footer p {
+  margin: 0;
 }
 
+/* Media Query */
 @media only screen and (max-width : 992px) {
   main {
     padding-left: 0;
@@ -446,6 +448,7 @@ footer.page-footer {
 
   #about .profile-pic {
     width: 200px;
+    height: auto;
   }
 }
 

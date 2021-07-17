@@ -69,7 +69,7 @@ $(function() {
   setInterval(function() {
     for(var i = 0; i < elements.length; i++) {
       var random = Math.floor(Math.random() * 10);
-      if (random < 2) {
+      if (random < 3) {
         var element = elements[i];
         $(element).addClass('bounce').on('animationend', function() {
           $(this).removeClass('bounce');
