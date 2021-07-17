@@ -87,6 +87,7 @@ main {
 
 .navbar-fixed i {
   font-size: 40px;
+  color: var(--main);
 }
 
 #slide-out .active {
@@ -120,13 +121,18 @@ main {
 }
 
 #slide-out .page {
-  height: 60px;
+  height: 80px;
+}
+
+#slide-out .page i {
+  text-align: center;
 }
 
 #slide-out .page a, #slide-out .page i {
   height: 100%;
-  line-height: 60px;
+  line-height: 80px;
   align-items: center;
+  font-size: 1.2rem;
 }
 
 #slide-out i {
@@ -276,6 +282,7 @@ main {
 #projects .project-image {
   width: 100%;
   max-width: 300px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
 }
 
 #projects .project-detail-wrapper {
@@ -495,8 +502,16 @@ footer.page-footer {
     margin: 50px 0;
   }
 
+  #projects .project-detail-wrapper {
+    margin-top: 20px;
+  }
+
   #projects .reverse {
     flex-direction: column-reverse;
+  }
+
+  #projects .project-image {
+    max-width: inherit;
   }
 
   #skills .skill-img img {
