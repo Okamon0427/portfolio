@@ -12,7 +12,8 @@
 }
 
 html {
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 16px;
 }
 
@@ -53,26 +54,28 @@ main {
   position: absolute;
   bottom: -2px;
   left: 0;
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   background: var(--black);
   transform: scale(0, 1);
   transform-origin: center top;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .link:hover::after {
   transform: scale(1, 1);
 }
 
-#projects .company-title a, #about .about-text a {
+#projects .company-title a,
+#about .about-text a {
   text-decoration: underline;
   text-decoration-color: var(--white);
   transition: 0.5s;
 }
 
-#projects .company-title a:hover, #about .about-text a:hover {
+#projects .company-title a:hover,
+#about .about-text a:hover {
   text-decoration-color: var(--link);
 }
 
@@ -94,7 +97,7 @@ main {
 }
 
 #slide-out .active .material-icons {
-  color: var(--main)!important;
+  color: var(--main) !important;
 }
 
 #slide-out.sidenav {
@@ -112,7 +115,7 @@ main {
   height: 100%;
   font-size: 2rem;
   line-height: 2.5rem;
-  font-family: 'Tourney', cursive;
+  font-family: "Tourney", cursive;
 }
 
 #slide-out .logo a:hover {
@@ -127,7 +130,8 @@ main {
   text-align: center;
 }
 
-#slide-out .page a, #slide-out .page i {
+#slide-out .page a,
+#slide-out .page i {
   height: 100%;
   line-height: 60px;
   align-items: center;
@@ -142,7 +146,7 @@ main {
 #home {
   position: relative;
   height: 100vh;
-  background-image: url(../images/others/background.jpg);
+  background-image: url(../images/others/background.JPG);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -163,9 +167,10 @@ main {
   margin-top: 150px;
 }
 
-#home .greeting-name, #home .greeting-dynamic {
+#home .greeting-name,
+#home .greeting-dynamic {
   color: var(--white);
-  text-shadow:1px 1px 5px var(--black);
+  text-shadow: 1px 1px 5px var(--black);
 }
 
 #home .greeting-icon {
@@ -174,11 +179,21 @@ main {
 }
 
 @keyframes icon-shaking {
-  0% {transform: translateX(0px) rotateZ(0deg)}
-  25% {transform: translateX(3px) rotateZ(10deg)}
-  50% {transform: translateX(0px) rotateZ(0deg)}
-  75% {transform: translateX(-3px) rotateZ(-10deg)}
-  100% {transform: translateX(0px) rotateZ(0deg)}
+  0% {
+    transform: translateX(0px) rotateZ(0deg);
+  }
+  25% {
+    transform: translateX(3px) rotateZ(10deg);
+  }
+  50% {
+    transform: translateX(0px) rotateZ(0deg);
+  }
+  75% {
+    transform: translateX(-3px) rotateZ(-10deg);
+  }
+  100% {
+    transform: translateX(0px) rotateZ(0deg);
+  }
 }
 
 #home .scroll-icon {
@@ -189,16 +204,26 @@ main {
   margin-left: -20px;
   font-size: 3.5rem;
   color: var(--white);
-  text-shadow:1px 1px 5px var(--black);
+  text-shadow: 1px 1px 5px var(--black);
   animation: icon-scroll 0.8s linear infinite;
 }
 
 @keyframes icon-scroll {
-  0% {transform: translateY(0px)}
-  25% {transform: translateY(5px)}
-  50% {transform: translateY(0px)}
-  75% {transform: translateY(-5px)}
-  100% {transform: translateY(0px)}
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* About Section */
@@ -262,14 +287,30 @@ main {
 }
 
 @keyframes bounce-animation {
-  0% {transform: translateY(0px)}
-  15% {transform: translateY(-10px)}
-  30% {transform: translateY(0px)}
-  45% {transform: translateY(-6px)}
-  60% {transform: translateY(0px)}
-  75% {transform: translateY(-3.6px)}
-  90% {transform: translateY(0px)}
-  100% {transform: translateY(0px)}
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(-10px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  45% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-3.6px);
+  }
+  90% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 #projects .project {
@@ -286,7 +327,8 @@ main {
 #projects .project-image {
   width: 100%;
   max-width: 300px;
-  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
 }
 
 #projects .project-detail-wrapper {
@@ -302,7 +344,7 @@ main {
 
 #projects .card-content:hover .card-title {
   background-size: 100% 100%;
-  transition: .3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 #projects .company-title {
@@ -433,7 +475,7 @@ footer p {
 }
 
 /* Media Query */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   main {
     padding-left: 0;
   }
@@ -452,7 +494,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 14px;
   }
@@ -482,7 +524,7 @@ footer p {
     font-size: 2.5rem;
     margin-bottom: 10px;
   }
-  
+
   #home .greeting-dynamic {
     font-size: 1.5rem;
     margin-top: 10px;
